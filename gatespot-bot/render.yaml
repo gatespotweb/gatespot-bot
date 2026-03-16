@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: gatespot-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8743684831:AAHVgIwKDCF8Xp-V_ixeYZJlgbR5dqYwTD4
+      - key: MAKE_WEBHOOK_DEPENSE
+        value: ""
+      - key: MAKE_WEBHOOK_REVENU
+        value: ""
